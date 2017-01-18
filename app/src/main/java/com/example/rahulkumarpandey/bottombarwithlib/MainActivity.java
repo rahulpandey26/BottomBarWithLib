@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Create items
         AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.item_1, R.drawable.delete, 0);// I passed 0 becoz i dont need , do as per ur requirement
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.item_2, R.drawable.likefilled, R.color.color_tab_2);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.item_3, R.drawable.share, R.color.color_tab_3);
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.item_2, R.drawable.likefilled, 0);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.item_3, R.drawable.share, 0);
 
         // Add items
         bottomNavigation.addItem(item1);
@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         // <------- SET BELOW PROPERTY AS PER YOUR REQUIREMENT----------->
-        
         // Set background color
         bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#FEFEFE"));
 
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setCurrentItem(1);
 
         // Customize notification (title, background, typeface)
-        bottomNavigation.setNotificationBackgroundColor(Color.parseColor("#F63D2B"));
+      //  bottomNavigation.setNotificationBackgroundColor(Color.parseColor("#F63D2B"));
 
         // Add or remove notification for each item
         //  bottomNavigation.setNotification("1", 3);
@@ -81,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 .setTextColor(ContextCompat.getColor(this, R.color.color_notification_text))
                 .build();
         bottomNavigation.setNotification(notification, 1);
-
         // Set listeners
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
             @Override
