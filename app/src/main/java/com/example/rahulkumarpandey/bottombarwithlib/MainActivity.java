@@ -24,15 +24,18 @@ public class MainActivity extends AppCompatActivity {
         AHBottomNavigation bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
 
         // Create items
-        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_1, R.drawable.delete, 0);// I passed 0 becoz i dont need , do as per ur requirement
-        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_2, R.drawable.likefilled, R.color.color_tab_2);
-        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_3, R.drawable.share, R.color.color_tab_3);
+        AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.item_1, R.drawable.delete, 0);// I passed 0 becoz i dont need , do as per ur requirement
+        AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.item_2, R.drawable.likefilled, R.color.color_tab_2);
+        AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.item_3, R.drawable.share, R.color.color_tab_3);
 
         // Add items
         bottomNavigation.addItem(item1);
         bottomNavigation.addItem(item2);
         bottomNavigation.addItem(item3);
 
+
+        // <------- SET BELOW PROPERTY AS PER YOUR REQUIREMENT----------->
+        
         // Set background color
         bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#FEFEFE"));
 
