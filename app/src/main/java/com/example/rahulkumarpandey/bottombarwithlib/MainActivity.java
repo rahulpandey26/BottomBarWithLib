@@ -74,12 +74,12 @@ public class MainActivity extends AppCompatActivity {
         // Add or remove notification for each item
         //  bottomNavigation.setNotification("1", 3);
         // OR
-        AHNotification notification = new AHNotification.Builder()
+      /*  AHNotification notification = new AHNotification.Builder()
                 .setText("1")
                 .setBackgroundColor(ContextCompat.getColor(this, R.color.color_notification_back))
                 .setTextColor(ContextCompat.getColor(this, R.color.color_notification_text))
                 .build();
-        bottomNavigation.setNotification(notification, 1);
+        bottomNavigation.setNotification(notification, 1);*/
         // Set listeners
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
             @Override
